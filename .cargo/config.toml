@@ -1,0 +1,9 @@
+[target.thumbv8m.main-none-eabihf]
+runner = "elf2uf2-rs -d"
+rustflags = [
+  "-C", "linker=flip-link",
+  "-C", "link-arg=-Tlink.x",
+]
+
+[build]
+target = "thumbv8m.main-none-eabihf"

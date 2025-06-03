@@ -1,0 +1,18 @@
+[package]
+name = "telescope-controller"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "minimal"
+path = "src/minimal.rs"
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+panic-halt = "0.2"
+rp2040-hal = "0.11.0"
+libm = "0.2"
+
+[profile.release]
+opt-level = "s"
